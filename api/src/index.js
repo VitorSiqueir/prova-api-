@@ -1,6 +1,6 @@
 import 'dotenv/config'
 
-import { con } from './repository/conection.js'
+import vilaocontroller from './controller/vilaocontroller.js'
 
 import express from 'express'
 import cors from 'cors'
@@ -10,7 +10,7 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
-
+server.use(vilaocontroller)
 
 console.log('BD Conectado')
 

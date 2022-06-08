@@ -1,0 +1,19 @@
+
+
+    /POST       /vilãocontroller
+
+
+    request body    
+    {
+        "vilão": "",
+        "maldades": "",
+        "super_poder": ""
+    }
+
+    response (200)
+    {
+        "id": 0,
+        "nm_vilão": "",
+        "maldades": "",
+        "super_poder": ""
+    }
