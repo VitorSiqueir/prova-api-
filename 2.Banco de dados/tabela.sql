@@ -1,6 +1,6 @@
-create database prova;
+create database ProvaDB;
 
-use prova;
+use ProvaDB;
 
 create table tb_vilão (
 	id_vilão	int,

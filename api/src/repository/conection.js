@@ -1,16 +1,11 @@
-import 'dotenv/config'
-import express from 'express'
-import cors from 'cors'
-import vilãocontroller from '../controller/vilãocontroller.js'
+import mysql from 'mysql2/promise'
 
-const server = express();
-server.use(cors());
-server.use(vilãocontroller)
-server.use(express.json());
-
+const con = await mysql2.createConection({
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PWD,
+    database: process.env.MYSQL_DB
+})    
 
 
-
-
-
-server.listen(process.env.PORT, () => console.log (`API ONLINE NA PORTA ${process.env.PORT}`));
+export { con }
